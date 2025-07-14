@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Executive Consultation | Infera AI - Schedule Your Strategic AI Briefing</title>
+    <meta name="description" content="Schedule executive consultation with Infera AI's leadership team. AI-powered lead qualification, personalized briefings, and technical consultations for enterprise AI transformation." />
+    <link rel="stylesheet" href="../css/main.css" />
+    
+    <!-- Google Translate Integration -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            // Desktop version
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'fr,en,es,de,it,pt,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+            
+            // Mobile version
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'fr,en,es,de,it,pt,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element_mobile');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <!-- Google Translate Custom Styling -->
+    <style>
+        /* Google Translate Widget Styling - Ultra Small, Icon Only */
+        .goog-te-gadget-simple {
+            background-color: transparent !important;
+            border: 1px solid #e5e7eb !important;
+            border-radius: 3px !important;
+            padding: 2px 4px 3px 3px !important;
+            font-size: 0px !important;
+            color: #6b7280 !important;
+            font-family: Inter, sans-serif !important;
+            margin: 0 !important;
+            width: 22px !important;
+            height: 22px !important;
+            line-height: 18px !important;
+            overflow: hidden !important;
+            position: relative !important;
+            z-index: 1001 !important;
+        }
+        
+        .goog-te-gadget-simple:hover {
+            border-color: #3b82f6 !important;
+            background-color: #f8fafc !important;
+        }
+        
+        .goog-te-gadget-simple .goog-te-menu-value {
+            font-size: 0px !important;
+            line-height: 0px !important;
+            color: transparent !important;
+            width: 0px !important;
+            height: 0px !important;
+            overflow: hidden !important;
+        }
+        
+        .goog-te-gadget-simple .goog-te-menu-value span {
+            display: none !important;
+        }
+        
+        /* Add a custom translate icon */
+        .goog-te-gadget-simple::before {
+            content: "" !important;
+            font-size: 12px !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            line-height: 1 !important;
+            color: #6b7280 !important;
+        }
+        
+        .goog-te-gadget-simple:hover::before {
+            color: #3b82f6 !important;
+        }
+        
+        /* Fix translate widget container - ultra small */
+        #google_translate_element {
+            display: inline-block !important;
+            width: 22px !important;
+            height: 22px !important;
+            overflow: hidden !important;
+        }
+        
+        #google_translate_element .goog-te-gadget {
+            font-size: 0 !important;
+            line-height: 0 !important;
+            width: 22px !important;
+            height: 22px !important;
+        }
+        
+        #google_translate_element .goog-te-gadget-simple {
+            font-size: 0px !important;
+            line-height: 18px !important;
+            width: 22px !important;
+            height: 22px !important;
+        }
+        
+        /* Mobile styling - slightly larger but still very compact */
+        #google_translate_element_mobile {
+            width: 24px !important;
+            height: 24px !important;
+        }
+        
+        #google_translate_element_mobile .goog-te-gadget-simple {
+            width: 24px !important;
+            height: 24px !important;
+            padding: 2px !important;
+        }
+        
+        #google_translate_element_mobile .goog-te-gadget-simple::before {
+            font-size: 14px !important;
+        }
+        
+        /* Prevent layout shifts */
+        .goog-te-gadget {
+            display: inline-block !important;
+            vertical-align: top !important;
+            width: 22px !important;
+            height: 22px !important;
+        }
+        
+        /* Hide dropdown arrow */
+        .goog-te-gadget-simple .goog-te-menu-value:after {
+            display: none !important;
+        }
+        
+        /* Hide all text elements */
+        .goog-te-gadget-simple * {
+            font-size: 0 !important;
+            color: transparent !important;
+        }
+    </style>
+    
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Finferaai2504back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background font-inter">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-executive sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="/home" class="flex items-center">
+                        <img src="../public/bluelogo.png" alt="Infera AI" class="h-32 w-auto" />
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/home" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">Home</a>
+                        <a href="/services" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">AI Automation Solutions</a>
+                        <a href="/about" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">About</a>
+                        <a href="/contact" class="text-primary font-medium border-b-2 border-secondary px-3 py-2">Contact</a>
+                        
+                        <!-- Google Translate Widget -->
+                        <div id="google_translate_element" class="flex items-center ml-4"></div>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-neutral-200">
+                    <a href="/home" class="text-text-secondary hover:text-primary block px-3 py-2">Home</a>
+                    <a href="/services" class="text-text-secondary hover:text-primary block px-3 py-2">AI Solutions</a>
+                    <a href="/about" class="text-text-secondary hover:text-primary block px-3 py-2">About</a>
+                    <a href="/contact" class="text-primary font-medium block px-3 py-2">Contact</a>
+                    
+                    <!-- Google Translate for Mobile -->
+                    <div class="px-3 py-2 border-t border-neutral-200 mt-4">
+                        <div class="text-sm text-text-secondary mb-2">Language / Langue:</div>
+                        <div id="google_translate_element_mobile"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+        <!-- Transparent overlay to maintain blue gradient -->
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom right, rgba(30, 58, 138, 0.85), rgba(55, 65, 81, 0.80), rgba(91, 33, 182, 0.85));"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="text-center text-white animate-fade-in">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Get Your Free <span class="text-accent">Automation</span><br />
+                    Assessment Today
+                </h1>
+                <p class="text-xl lg:text-2xl mb-8 text-primary-100 leading-relaxed max-w-4xl mx-auto">
+                    Discover how AI automation can transform your business operations. Our experts will analyze your processes and show you exactly how much time and money you can save.
+                </p>
+                
+                <!-- Quick Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <button onclick="openConsultationModal('automation-assessment')" class="btn-accent text-lg px-8 py-4">
+                        Get Free Automation Assessment
+                    </button>
+                    <button onclick="openConsultationModal('technical-demo')" class="bg-white text-primary hover:bg-primary-50 px-8 py-4 rounded-lg font-semibold transition-smooth">
+                        Schedule Technical Demo
+                    </button>
+                </div>
+                
+                <!-- Trust Indicators -->
+                <div class="flex flex-wrap justify-center items-center gap-8 text-primary-200">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>48-Hour ROI Report</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M12 15v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2m14-4V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                        <span>No Obligation</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                        <span>Automation Experts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Options -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Choose Your Automation Assessment
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Multiple assessment options designed to identify automation opportunities and calculate your potential ROI quickly and accurately.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Free Automation Assessment -->
+                <div class="card hover:shadow-card-hover transition-shadow">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Free Automation Assessment</h3>
+                    <p class="text-text-secondary mb-6">
+                        Comprehensive analysis of your current processes with detailed ROI projections and automation roadmap - completely free.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Process analysis & mapping
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            ROI calculation & timeline
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Custom automation strategy
+                        </div>
+                    </div>
+                    <button onclick="openConsultationModal('automation-assessment')" class="btn-accent w-full">
+                        Get Free Assessment
+                    </button>
+                </div>
+                
+                <!-- Technical Demo -->
+                <div class="card hover:shadow-card-hover transition-shadow">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Live Automation Demo</h3>
+                    <p class="text-text-secondary mb-6">
+                        See our automation solutions in action with a personalized demo using your actual business processes and data.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Live automation demonstration
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Technical Q&A session
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Integration requirements review
+                        </div>
+                    </div>
+                    <button onclick="openConsultationModal('technical-demo')" class="btn-secondary w-full">
+                        Schedule Demo
+                    </button>
+                </div>
+                
+                <!-- Pilot Program -->
+                <div class="card hover:shadow-card-hover transition-shadow">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3zm0-8a5 5 0 015 5 5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Pilot Automation Project</h3>
+                    <p class="text-text-secondary mb-6">
+                        Start with a small automation pilot to prove ROI before expanding to larger automation initiatives.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Small-scale proof of concept
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Measurable ROI tracking
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Expansion roadmap planning
+                        </div>
+                    </div>
+                    <button onclick="openConsultationModal('pilot-project')" class="btn-primary w-full">
+                        Start Pilot Project
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modal-title" class="text-2xl font-bold text-primary">Schedule Consultation</h3>
+                    <button onclick="closeConsultationModal()" class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <form id="consultation-form" class="space-y-6" onsubmit="submitConsultation(event)">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">First Name *</label>
+                            <input type="text" name="firstName" required class="input-field" placeholder="John" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Last Name *</label>
+                            <input type="text" name="lastName" required class="input-field" placeholder="Smith" />
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Email Address *</label>
+                        <input type="email" name="email" required class="input-field" placeholder="john.smith@company.com" />
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Company *</label>
+                            <input type="text" name="company" required class="input-field" placeholder="Company Name" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Job Title *</label>
+                            <input type="text" name="jobTitle" required class="input-field" placeholder="Chief Technology Officer" />
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Industry *</label>
+                        <select name="industry" required class="input-field">
+                            <option value="">Select your industry</option>
+                            <option>Financial Services</option>
+                            <option>Healthcare</option>
+                            <option>Manufacturing</option>
+                            <option>Retail & E-commerce</option>
+                            <option>Technology</option>
+                            <option>Energy & Utilities</option>
+                            <option>Government</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Company Size</label>
+                        <select name="companySize" class="input-field">
+                            <option value="">Select company size</option>
+                            <option>1-50 employees</option>
+                            <option>51-200 employees</option>
+                            <option>201-1000 employees</option>
+                            <option>1001-5000 employees</option>
+                            <option>5000+ employees</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Current Challenges</label>
+                        <textarea name="challenges" class="input-field h-32" placeholder="Describe your current business challenges and how AI might help address them..."></textarea>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" required class="mr-2" />
+                        <span class="text-sm text-text-secondary">
+                            I agree to receive communications from Infera AI and understand that I can unsubscribe at any time.
+                        </span>
+                    </div>
+                    
+                    <button type="submit" class="btn-accent w-full text-lg py-4">
+                        Schedule Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="../public/orangelogo.png" alt="Infera AI" class="h-16 w-auto" />
+                    </div>
+                    <p class="text-primary-200 mb-6 max-w-md">
+                        Transforming enterprises through intelligent automation that amplifies human potential and delivers sustainable competitive advantage.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:infera.contact@gmail.com" class="text-primary-300 hover:text-white transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Current Regions We Operate On</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li>Africa</li>
+                        <li>Europe</li>
+                        <li>North America</li>
+                        <li>Middle East</li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li><a href="/contact" class="hover:text-white transition-smooth">Schedule Consultation</a></li>
+                        <li><a href="about_infera_ai.html" class="hover:text-white transition-smooth">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-primary-800 mt-12 pt-8 text-center text-primary-300">
+                <p>&copy; 2025 Infera AI. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Email Service Script -->
+    <script src="../public/email-service.js"></script>
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll to section
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Consultation modal functions
+        function openConsultationModal(type) {
+            const modal = document.getElementById('consultation-modal');
+            const title = document.getElementById('modal-title');
+            
+            const titles = {
+                'automation-assessment': 'Schedule Free Automation Assessment',
+                'technical-demo': 'Schedule Live Automation Demo',
+                'pilot-project': 'Start Pilot Automation Project'
+            };
+            
+            title.textContent = titles[type] || 'Schedule Consultation';
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeConsultationModal() {
+            document.getElementById('consultation-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function submitConsultation(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            
+            // Validate form
+            const validation = FormValidator.validateForm(data);
+            
+            if (!validation.isValid) {
+                // Show validation errors
+                let errorMessage = 'Please fix the following errors:\n';
+                Object.values(validation.errors).forEach(error => {
+                    errorMessage += '• ' + error + '\n';
+                });
+                alert(errorMessage);
+                return;
+            }
+            
+            // Send email using EmailJS
+            emailService.sendEmail(data)
+                .then(result => {
+                    if (result.success) {
+                        alert('Thank you for your consultation request! We will contact you within 24 hours to confirm your appointment.');
+                        form.reset();
+                        closeConsultationModal();
+                    } else {
+                        alert(result.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Form submission error:', error);
+                    alert('There was an error submitting your form. Please try again or contact us directly at infera.contact@gmail.com');
+                });
+        }
+
+        // RFP submission
+        function submitRFP(event) {
+            event.preventDefault();
+            alert('Thank you for submitting your RFP! We will review your requirements and respond within 48 hours.');
+        }
+
+        // Live chat functions
+        function openLiveChat() {
+            document.getElementById('chat-window').classList.remove('hidden');
+        }
+
+        // Close modals when clicking outside
+        document.getElementById('consultation-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeConsultationModal();
+            }
+        });
+
+        // File upload handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const fileInput = document.querySelector('input[type="file"]');
+            const dropZone = fileInput.parentElement;
+            
+            dropZone.addEventListener('click', () => fileInput.click());
+            
+            dropZone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                dropZone.classList.add('border-secondary');
+            });
+            
+            dropZone.addEventListener('dragleave', () => {
+                dropZone.classList.remove('border-secondary');
+            });
+            
+            dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dropZone.classList.remove('border-secondary');
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    fileInput.files = files;
+                    dropZone.querySelector('p').textContent = `Selected: ${files[0].name}`;
+                }
+            });
+            
+            fileInput.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    dropZone.querySelector('p').textContent = `Selected: ${e.target.files[0].name}`;
+                }
+            });
+        });
+
+        // Auto-hide chat widget on scroll
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const chatWidget = document.getElementById('chat-widget');
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                chatWidget.style.transform = 'translateY(100px)';
+            } else {
+                chatWidget.style.transform = 'translateY(0)';
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

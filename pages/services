@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Solutions & Services - Enterprise AI Implementation | Infera AI</title>
+    <meta name="description" content="Comprehensive AI solutions portfolio including Machine Learning, NLP, Predictive Analytics, and Intelligent Automation. Interactive demos, ROI calculators, and industry-specific implementations." />
+    <link rel="stylesheet" href="../css/main.css" />
+    
+    <!-- Google Translate Integration -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            // Desktop version
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'fr,en,es,de,it,pt,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+            
+            // Mobile version
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'fr,en,es,de,it,pt,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element_mobile');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <!-- Google Translate Custom Styling -->
+    <style>
+        /* Google Translate Widget Styling - Ultra Small, Icon Only */
+        .goog-te-gadget-simple {
+            background-color: transparent !important;
+            border: 1px solid #e5e7eb !important;
+            border-radius: 3px !important;
+            padding: 2px 4px 3px 3px !important;
+            font-size: 0px !important;
+            color: #6b7280 !important;
+            font-family: Inter, sans-serif !important;
+            margin: 0 !important;
+            width: 22px !important;
+            height: 22px !important;
+            line-height: 18px !important;
+            overflow: hidden !important;
+            position: relative !important;
+            z-index: 1001 !important;
+        }
+        
+        .goog-te-gadget-simple:hover {
+            border-color: #3b82f6 !important;
+            background-color: #f8fafc !important;
+        }
+        
+        .goog-te-gadget-simple .goog-te-menu-value {
+            font-size: 0px !important;
+            line-height: 0px !important;
+            color: transparent !important;
+            width: 0px !important;
+            height: 0px !important;
+            overflow: hidden !important;
+        }
+        
+        .goog-te-gadget-simple .goog-te-menu-value span {
+            display: none !important;
+        }
+        
+        /* Add a custom translate icon */
+        .goog-te-gadget-simple::before {
+            content: "" !important;
+            font-size: 12px !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            line-height: 1 !important;
+            color: #6b7280 !important;
+        }
+        
+        .goog-te-gadget-simple:hover::before {
+            color: #3b82f6 !important;
+        }
+        
+        /* Fix translate widget container - ultra small */
+        #google_translate_element {
+            display: inline-block !important;
+            width: 22px !important;
+            height: 22px !important;
+            overflow: hidden !important;
+        }
+        
+        #google_translate_element .goog-te-gadget {
+            font-size: 0 !important;
+            line-height: 0 !important;
+            width: 22px !important;
+            height: 22px !important;
+        }
+        
+        #google_translate_element .goog-te-gadget-simple {
+            font-size: 0px !important;
+            line-height: 18px !important;
+            width: 22px !important;
+            height: 22px !important;
+        }
+        
+        /* Mobile styling - slightly larger but still very compact */
+        #google_translate_element_mobile {
+            width: 24px !important;
+            height: 24px !important;
+        }
+        
+        #google_translate_element_mobile .goog-te-gadget-simple {
+            width: 24px !important;
+            height: 24px !important;
+            padding: 2px !important;
+        }
+        
+        #google_translate_element_mobile .goog-te-gadget-simple::before {
+            font-size: 14px !important;
+        }
+        
+        /* Prevent layout shifts */
+        .goog-te-gadget {
+            display: inline-block !important;
+            vertical-align: top !important;
+            width: 22px !important;
+            height: 22px !important;
+        }
+        
+        /* Hide dropdown arrow */
+        .goog-te-gadget-simple .goog-te-menu-value:after {
+            display: none !important;
+        }
+        
+        /* Hide all text elements */
+        .goog-te-gadget-simple * {
+            font-size: 0 !important;
+            color: transparent !important;
+        }
+    </style>
+    
+<!--<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Finferaai2504back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>-->
+</head>
+<body class="bg-background font-inter">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-executive sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="/home" class="flex items-center">
+                        <img src="../public/bluelogo.png" alt="Infera AI" class="h-32 w-auto" />
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/home" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">Home</a>
+                        <a href="/services" class="text-primary font-medium border-b-2 border-secondary px-3 py-2">AI Automation Solutions</a>
+                        <a href="/about" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">About</a>
+                        <a href="/contact" class="btn-accent">Schedule Consultation</a>
+                        
+                        <!-- Google Translate Widget -->
+                        <div id="google_translate_element" class="flex items-center ml-4"></div>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-neutral-200">
+                    <a href="/home" class="text-text-secondary hover:text-primary block px-3 py-2">Home</a>
+                    <a href="/services" class="text-primary font-medium block px-3 py-2">AI Automation Solutions</a>
+                    <a href="/about" class="text-text-secondary hover:text-primary block px-3 py-2">About</a>
+                    <a href="/contact" class="btn-accent block text-center mt-4">Schedule Consultation</a>
+                    
+                    <!-- Google Translate for Mobile -->
+                    <div class="px-3 py-2 border-t border-neutral-200 mt-4">
+                        <div class="text-sm text-text-secondary mb-2">Language / Langue:</div>
+                        <div id="google_translate_element_mobile"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+        <!-- Transparent overlay to maintain blue gradient -->
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom right, rgba(30, 58, 138, 0.85), rgba(55, 65, 81, 0.80), rgba(91, 33, 182, 0.85));"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="text-center text-white animate-fade-in">
+                <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                    Complete <span class="text-accent">AI Automation</span><br />
+                    Solutions Portfolio
+                </h1>
+                <p class="text-xl lg:text-2xl mb-8 text-primary-100 leading-relaxed max-w-4xl mx-auto">
+                    Transform your enterprise operations with our comprehensive automation solutions - from workflow automation to document processing and customer service automation.
+                </p>
+                
+                <!-- Solution Categories Quick Nav -->
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button onclick="scrollToSection('workflow-automation')" class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-smooth border border-white/20">
+                        Workflow Automation
+                    </button>
+                    <button onclick="scrollToSection('document-processing')" class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-smooth border border-white/20">
+                        Document Processing
+                    </button>
+                    <button onclick="scrollToSection('customer-service')" class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-smooth border border-white/20">
+                        Customer Service Automation
+                    </button>
+                    <button onclick="scrollToSection('sales-automation')" class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-smooth border border-white/20">
+                        Sales Automation
+                    </button>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact" class="btn-accent px-8 py-4 rounded-lg font-semibold transition-smooth">
+                        Get Free Assessment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation Benefits -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Why Choose Our AI Automation Solutions
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Proven results that transform how your business operates
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M12 6V4a2 2 0 00-2-2H4a2 2 0 00-2 2v16c0 1.1.9 2 2 2h6a2 2 0 002-2v-2"/>
+                            <path d="M18.4 7.6L16 5.2l-2.4 2.4L12 6l2.4-2.4L16 2l2.4 2.4L20 6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Rapid Deployment</h3>
+                    <p class="text-text-secondary text-sm">Get automation running in 72 hours, not months</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Guaranteed ROI</h3>
+                    <p class="text-text-secondary text-sm">90-day money-back guarantee on automation results</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Seamless Integration</h3>
+                    <p class="text-text-secondary text-sm">Works with your existing systems and workflows</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Expert Support</h3>
+                    <p class="text-text-secondary text-sm">24/7 monitoring and dedicated automation specialists</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Automation -->
+    <section id="workflow-automation" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Workflow Automation
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Eliminate manual tasks and accelerate business processes with intelligent workflow automation that adapts to your unique requirements
+                </p>
+            </div>
+            
+            <div class="flex justify-center">
+                <!-- Features & Benefits -->
+                <div class="space-y-8 max-w-2xl w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-6">Automation Capabilities</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Smart Routing & Assignment</h4>
+                                    <p class="text-text-secondary">Automatically route tasks to the right person based on skills, workload, and availability</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Approval Workflows</h4>
+                                    <p class="text-text-secondary">Streamline approval processes with automated escalation and notification systems</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Data Integration</h4>
+                                    <p class="text-text-secondary">Connect multiple systems and automatically sync data across platforms</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Exception Handling</h4>
+                                    <p class="text-text-secondary">Intelligent error detection and automatic retry mechanisms</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ROI Metrics -->
+                    <div class="bg-success-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-success-600 mb-4">Average Client Results</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="text-2xl font-bold text-success">85%</div>
+                                <div class="text-sm text-success-600">Task automation rate</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-success">$1.8M</div>
+                                <div class="text-sm text-success-600">Annual labor savings</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Processing -->
+    <section id="document-processing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Document Processing Automation
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Transform unstructured documents into actionable data with AI-powered extraction, classification, and processing
+                </p>
+            </div>
+            
+            <div class="flex justify-center">
+                <!-- Features & Benefits -->
+                <div class="space-y-8 max-w-2xl w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-6">Document Processing Capabilities</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M8 12a4 4 0 100-8 4 4 0 000 8zm0 2a6 6 0 016 6H2a6 6 0 016-6z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Intelligent OCR & Data Extraction</h4>
+                                    <p class="text-text-secondary">Extract text, numbers, and structured data from any document format with 99.5% accuracy</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Document Classification</h4>
+                                    <p class="text-text-secondary">Automatically categorize and route documents to appropriate workflows</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Validation & Verification</h4>
+                                    <p class="text-text-secondary">Cross-reference extracted data with databases and flag anomalies</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">System Integration</h4>
+                                    <p class="text-text-secondary">Direct integration with ERP, CRM, and accounting systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Client Testimonial -->
+                    
+                </div>
+                
+                <!-- Interactive Document Demo -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Service Automation -->
+    <section id="customer-service" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Customer Service Automation
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Deliver exceptional customer experiences 24/7 with AI-powered service automation that handles inquiries, routes tickets, and provides instant resolutions
+                </p>
+            </div>
+            
+            <div class="flex justify-center">
+                <!-- Features & Benefits -->
+                <div class="space-y-8 max-w-xl w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-6">Service Automation Features</h3>
+                        <div class="space-y-6">
+                            <div class="bg-white p-6 rounded-lg shadow-sm border border-neutral-200">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">24/7 AI assistants / AI Chatbots</h4>
+                                        <p class="text-text-secondary">AI Speech Assistants that handle customer calls / Chatbots that handle 80% of common inquiries instantly</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-lg shadow-sm border border-neutral-200">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">Smart Ticket Routing</h4>
+                                        <p class="text-text-secondary">Automatically route tickets to the best available agent based on skills and workload</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-lg shadow-sm border border-neutral-200">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">Automated Responses</h4>
+                                        <p class="text-text-secondary">Generate personalized responses based on customer history and context</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Industry Results -->
+                    <div class="bg-primary-50 p-6 rounded-lg text-center">
+                        <h4 class="font-semibold text-primary mb-4">Service Automation Impact</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-success mb-1">+85%</div>
+                                <div class="text-sm text-text-secondary">Response Time</div>
+                                <div class="text-xs text-success">faster</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-success mb-1">+35%</div>
+                                <div class="text-sm text-text-secondary">Customer Satisfaction</div>
+                                <div class="text-xs text-success">increase</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-success mb-1">-60%</div>
+                                <div class="text-sm text-text-secondary">Operating Costs</div>
+                                <div class="text-xs text-success">reduction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sales Automation -->
+    <section id="sales-automation" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Sales Process Automation
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Accelerate your sales cycle with AI-powered lead qualification, automated follow-ups, and intelligent pipeline management
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Lead Qualification -->
+                <div class="bg-white rounded-2xl p-8 shadow-card-hover border border-neutral-200">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Lead Qualification</h3>
+                    <p class="text-text-secondary mb-6">
+                        Automatically score and qualify leads based on behavior, demographics, and engagement patterns.
+                    </p>
+                    
+                    <!-- Lead Scoring Visualization -->
+                    <div class="bg-surface p-4 rounded-lg mb-6">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm font-medium">Website Engagement</span>
+                                <span class="text-sm text-success font-medium">High</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm font-medium">Email Engagement</span>
+                                <span class="text-sm text-accent font-medium">Medium</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm font-medium">Company Fit</span>
+                                <span class="text-sm text-success font-medium">High</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-success mb-1">A+</div>
+                        <div class="text-sm text-text-secondary">Lead Score</div>
+                    </div>
+                </div>
+                
+                <!-- Automated Follow-ups -->
+                <div class="bg-white rounded-2xl p-8 shadow-card-hover border border-neutral-200">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Automated Follow-ups</h3>
+                    <p class="text-text-secondary mb-6">
+                        Personalized email sequences that adapt based on prospect behavior and engagement levels.
+                    </p>
+                    
+                    <!-- Email Sequence -->
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-success rounded-full flex items-center justify-center">
+                                <span class="text-white text-sm font-semibold">1</span>
+                            </div>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-primary">Welcome Email</div>
+                                <div class="text-xs text-text-secondary">Sent immediately</div>
+                            </div>
+                            <div class="w-2 h-2 bg-success rounded-full"></div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                                <span class="text-white text-sm font-semibold">2</span>
+                            </div>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-primary">Value Proposition</div>
+                                <div class="text-xs text-text-secondary">Day 3</div>
+                            </div>
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-neutral-300 rounded-full flex items-center justify-center">
+                                <span class="text-white text-sm font-semibold">3</span>
+                            </div>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-text-secondary">Case Study</div>
+                                <div class="text-xs text-text-secondary">Day 7</div>
+                            </div>
+                            <div class="w-2 h-2 bg-neutral-300 rounded-full"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-secondary mb-1">45%</div>
+                        <div class="text-sm text-text-secondary">Open Rate</div>
+                    </div>
+                </div>
+                
+                <!-- Pipeline Management -->
+                <div class="bg-white rounded-2xl p-8 shadow-card-hover border border-neutral-200">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Pipeline Management</h3>
+                    <p class="text-text-secondary mb-6">
+                        AI-powered insights that predict deal outcomes and recommend next best actions for your sales team.
+                    </p>
+                    
+                    <!-- Pipeline Metrics -->
+                    <div class="space-y-4 mb-6">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm font-medium text-primary">Deal Velocity</span>
+                                <span class="text-sm font-semibold text-success">+32% faster</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm font-medium text-primary">Win Rate</span>
+                                <span class="text-sm font-semibold text-secondary">28%</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 56%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm font-medium text-primary">Pipeline Health</span>
+                                <span class="text-sm font-semibold text-accent">Strong</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry-Specific Solutions -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Industry-Specific AI Solutions
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Tailored AI implementations designed for the unique challenges and compliance requirements of your industry
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Manufacturing -->
+                <div class="card">
+                    <div class="flex items-start space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary mb-2">Manufacturing</h3>
+                            <p class="text-text-secondary">Smart factory solutions for predictive maintenance and quality optimization</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Predictive maintenance</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Quality control automation</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Supply chain optimization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-accent-50 p-4 rounded-lg">
+                        <div class="text-sm font-medium text-accent-600 mb-1">Average Impact</div>
+                        <div class="text-lg font-bold text-accent">50% less downtime, 35% efficiency gain</div>
+                    </div>
+                </div>
+                
+                <!-- Retail -->
+                <div class="card">
+                    <div class="flex items-start space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary mb-2">Retail & E-commerce</h3>
+                            <p class="text-text-secondary">Personalized customer experiences and intelligent inventory management</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Personalized recommendations</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Dynamic pricing optimization</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Demand forecasting</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-primary-50 p-4 rounded-lg">
+                        <div class="text-sm font-medium text-primary-600 mb-1">Average Impact</div>
+                        <div class="text-lg font-bold text-primary">25% revenue increase, 40% inventory optimization</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary-900 to-secondary-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+                Ready to Transform Your Business with AI?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Join industry leaders who have already revolutionized their operations with our comprehensive AI solutions portfolio.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_executive_consultation.html" class="btn-accent text-lg px-8 py-4">
+                    Schedule Technical Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="../public/orangelogo.png" alt="Infera AI" class="h-16 w-auto" />
+                    </div>
+                    <p class="text-primary-200 mb-6 max-w-md">
+                        Transforming enterprises through intelligent automation that amplifies human potential and delivers sustainable competitive advantage.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:infera.contact@gmail.com" class="text-primary-300 hover:text-white transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Current Regions We Operate On</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li>Africa</li>
+                        <li>Europe</li>
+                        <li>North America</li>
+                        <li>Middle East</li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li><a href="contact_executive_consultation.html" class="hover:text-white transition-smooth">Schedule Consultation</a></li>
+                        <li><a href="about_infera_ai.html" class="hover:text-white transition-smooth">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-primary-800 mt-12 pt-8 text-center text-primary-300">
+                <p>&copy; 2025 Infera AI. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu) {
+                menu.classList.toggle('hidden');
+            }
+        }
+
+        // Smooth scrolling to sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Machine Learning Demo
+        function updateMLDemo() {
+            const usecaseElement = document.getElementById('ml-usecase');
+            const inputElement = document.getElementById('ml-input');
+            
+            if (!usecaseElement || !inputElement) {
+                return; // Exit if elements don't exist
+            }
+            
+            const usecase = usecaseElement.value;
+            
+            const sampleData = {
+                'fraud-detection': 'Transaction: $2,500, Location: New York, Time: 2:30 AM, Card: *1234',
+                'customer-churn': 'Customer: Premium plan, Usage: 20% decline, Support tickets: 3',
+                'demand-forecasting': 'Product: Laptop Model X, Season: Q4, Historical sales: 1,200 units',
+                'quality-control': 'Product batch: #A1234, Temperature: 85°C, Pressure: 2.1 bar'
+            };
+            
+            inputElement.placeholder = sampleData[usecase] || 'Enter sample data...';
+        }
+
+        function runMLDemo() {
+            const inputElement = document.getElementById('ml-input');
+            const resultsElement = document.getElementById('ml-results');
+            const accuracyElement = document.getElementById('ml-accuracy');
+            const confidenceElement = document.getElementById('ml-confidence');
+            
+            if (!inputElement || !resultsElement || !accuracyElement || !confidenceElement) {
+                return; // Exit if elements don't exist
+            }
+            
+            const input = inputElement.value;
+            if (input.trim()) {
+                // Simulate processing
+                setTimeout(() => {
+                    resultsElement.classList.remove('hidden');
+                    
+                    // Randomize results for demo
+                    const accuracy = (Math.random() * 10 + 90).toFixed(1);
+                    const confidence = (Math.random() * 15 + 80).toFixed(1);
+                    
+                    accuracyElement.textContent = accuracy + '%';
+                    confidenceElement.textContent = confidence + '%';
+                    
+                    const predictions = [
+                        'High probability of positive outcome',
+                        'Moderate risk detected',
+                        'Optimal conditions identified',
+                        'Anomaly pattern found'
+                    ];
+                    
+                    document.getElementById('ml-prediction').textContent = 
+                        predictions[Math.floor(Math.random() * predictions.length)];
+                }, 1500);
+            }
+        }
+
+        // NLP Demo
+        function runNLPDemo() {
+            const inputElement = document.getElementById('nlp-input');
+            const typeElement = document.getElementById('nlp-type');
+            const resultsElement = document.getElementById('nlp-results');
+            const outputElement = document.getElementById('nlp-output');
+            
+            if (!inputElement || !typeElement || !resultsElement || !outputElement) {
+                return; // Exit if elements don't exist
+            }
+            
+            const input = inputElement.value;
+            const type = typeElement.value;
+            
+            if (input.trim()) {
+                setTimeout(() => {
+                    resultsElement.classList.remove('hidden');
+                    
+                    let results = '';
+                    
+                    switch(type) {
+                        case 'sentiment':
+                            results = `
+                                <div class="bg-success-50 p-4 rounded-lg">
+                                    <div class="font-semibold text-success-600 mb-2">Sentiment: Positive (87%)</div>
+                                    <div class="text-sm text-success-700">
+                                        <strong>Positive aspects:</strong> "love", "exceptional", "satisfied", "recommend"<br>
+                                        <strong>Negative aspects:</strong> "packaging could be improved"
+                                    </div>
+                                </div>
+                            `;
+                            break;
+                        case 'entities':
+                            results = `
+                                <div class="space-y-2">
+                                    <div class="bg-secondary-50 p-3 rounded">
+                                        <strong>Product:</strong> "this product"
+                                    </div>
+                                    <div class="bg-secondary-50 p-3 rounded">
+                                        <strong>Service:</strong> "customer service"
+                                    </div>
+                                    <div class="bg-secondary-50 p-3 rounded">
+                                        <strong>Feature:</strong> "delivery", "packaging"
+                                    </div>
+                                </div>
+                            `;
+                            break;
+                        case 'summary':
+                            results = `
+                                <div class="bg-accent-50 p-4 rounded-lg">
+                                    <div class="font-semibold text-accent-600 mb-2">Summary:</div>
+                                    <div class="text-sm text-accent-700">
+                                        Customer expresses high satisfaction with product and service quality, 
+                                        particularly praising fast delivery. Minor improvement suggested for packaging.
+                                    </div>
+                                </div>
+                            `;
+                            break;
+                        case 'keywords':
+                            results = `
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">product</span>
+                                    <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">customer service</span>
+                                    <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">delivery</span>
+                                    <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">satisfied</span>
+                                    <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">recommend</span>
+                                </div>
+                            `;
+                            break;
+                    }
+                    
+                    outputElement.innerHTML = results;
+                }, 1000);
+            }
+        }
+
+        // Predictive Analytics Demo
+        function updatePredictiveDemo() {
+            // Update chart based on industry and period selection
+            // In a real implementation, this would update the SVG chart
+            console.log('Updating predictive demo...');
+        }
+
+        // ROI Calculator
+        function openROICalculator() {
+            document.getElementById('roi-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            updateROICalculation();
+        }
+
+        function closeROICalculator() {
+            document.getElementById('roi-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function updateROICalculation() {
+            const industry = document.getElementById('roi-industry')?.value || 'retail';
+            const size = document.getElementById('roi-size')?.value || 'medium';
+            const revenue = parseFloat(document.getElementById('roi-revenue')?.value || 10000000);
+            const hours = parseFloat(document.getElementById('roi-hours')?.value || 40);
+            const solution = document.getElementById('roi-solution')?.value || 'ml';
+            
+            // Calculate ROI based on inputs
+            const baseMultiplier = {
+                'small': 0.5,
+                'medium': 1.0,
+                'large': 1.5
+            }[size];
+            
+            const industryMultiplier = {
+                'retail': 1.2,
+                'finance': 1.5,
+                'healthcare': 1.3,
+                'manufacturing': 1.4,
+                'technology': 1.1
+            }[industry];
+            
+            const solutionMultiplier = {
+                'ml': 1.2,
+                'nlp': 1.0,
+                'predictive': 1.3,
+                'automation': 1.4
+            }[solution];
+            
+            const annualSavings = Math.round(revenue * 0.15 * baseMultiplier * industryMultiplier * solutionMultiplier);
+            const implementationCost = Math.round(annualSavings * 0.3);
+            const roi = Math.round((annualSavings / implementationCost) * 100);
+            const breakeven = Math.round((implementationCost / annualSavings) * 12 * 10) / 10;
+            const efficiency = Math.round(60 + (Math.random() * 30));
+            
+            // Update display
+            document.getElementById('roi-percentage').textContent = roi + '%';
+            document.getElementById('roi-savings').textContent = '$' + annualSavings.toLocaleString();
+            document.getElementById('roi-cost').textContent = '$' + implementationCost.toLocaleString();
+            document.getElementById('roi-breakeven').textContent = breakeven + ' months';
+            document.getElementById('roi-efficiency').textContent = efficiency + '%';
+        }
+
+        // Close modals when clicking outside
+        document.getElementById('roi-modal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeROICalculator();
+            }
+        });
+
+        // Initialize demos
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, initializing demos...');
+            
+            // Only run updateMLDemo if the ML elements exist
+            if (document.getElementById('ml-usecase') && document.getElementById('ml-input')) {
+                console.log('ML demo elements found, initializing...');
+                updateMLDemo();
+            } else {
+                console.log('ML demo elements not found, skipping...');
+            }
+            
+            // Only run updateROICalculation if the ROI modal exists
+            if (document.getElementById('roi-modal')) {
+                console.log('ROI modal found, initializing...');
+                updateROICalculation();
+            } else {
+                console.log('ROI modal not found, skipping...');
+            }
+            
+            console.log('Demo initialization complete');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
