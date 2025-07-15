@@ -36,6 +36,26 @@ app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, 'pages', 'contact.html'));
 });
 
+app.get('/home-fr', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.sendFile(path.join(__dirname, 'pages', 'home-fr.html'));
+});
+
+app.get('/about-fr', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.sendFile(path.join(__dirname, 'pages', 'about-fr.html'));
+});
+
+app.get('/services-fr', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.sendFile(path.join(__dirname, 'pages', 'services-fr.html'));
+});
+
+app.get('/contact-fr', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.sendFile(path.join(__dirname, 'pages', 'contact-fr.html'));
+});
+
 // Health check endpoint for Azure
 app.get('/health', (req, res) => {
     res.json({ status: 'healthy', timestamp: new Date().toISOString() });

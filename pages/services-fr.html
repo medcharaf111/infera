@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solutions & Services IA - Implémentation IA pour Entreprises | Infera AI</title>
+    <meta name="description" content="Portfolio complet de solutions IA incluant l'Apprentissage Automatique, le NLP, l'Analyse Prédictive et l'Automatisation Intelligente. Démos interactives, calculateurs de ROI et implémentations spécifiques à l'industrie." />
+    <link rel="stylesheet" href="../css/main.css" />
+    
+<!--<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Finferaai2504back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>-->
+</head>
+<body class="bg-background font-inter">
+    <!-- En-tête de Navigation -->
+    <header class="bg-white shadow-executive sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="/home-fr" class="flex items-center">
+                        <img src="../public/bluelogo.png" alt="Infera AI" class="h-32 w-auto" />
+                    </a>
+                </div>
+                
+                <!-- Navigation de Bureau -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/home-fr" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">Accueil</a>
+                        <a href="/services-fr" class="text-primary font-medium border-b-2 border-secondary px-3 py-2">Solutions d'Automatisation IA</a>
+                        <a href="/about-fr" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">À Propos</a>
+                        <a href="/contact-fr" class="btn-accent">Planifier une Consultation</a>
+                        <a href="/services" class="ml-4 px-3 py-2 rounded border border-primary text-primary hover:bg-primary hover:text-white transition-smooth">EN</a>
+                    </div>
+                </div>
+                
+                <!-- Bouton du menu mobile -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Navigation Mobile -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-neutral-200">
+                    <a href="/home-fr" class="text-text-secondary hover:text-primary block px-3 py-2">Accueil</a>
+                    <a href="/services-fr" class="text-primary font-medium block px-3 py-2">Solutions d'Automatisation IA</a>
+                    <a href="/about-fr" class="text-text-secondary hover:text-primary block px-3 py-2">À Propos</a>
+                    <a href="/contact-fr" class="btn-accent block text-center mt-4">Planifier une Consultation</a>
+                    <a href="/services" class="block mt-4 px-3 py-2 rounded border border-primary text-primary text-center hover:bg-primary hover:text-white transition-smooth">EN</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Héros -->
+    <section class="relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+        <!-- Superposition transparente pour maintenir le dégradé bleu -->
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom right, rgba(30, 58, 138, 0.85), rgba(55, 65, 81, 0.80), rgba(91, 33, 182, 0.85));"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="text-center text-white animate-fade-in">
+                <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                    Portfolio Complet de Solutions<br />
+                    d'<span class="text-accent">Automatisation par l'IA</span>
+                </h1>
+                <p class="text-xl lg:text-2xl mb-8 text-primary-100 leading-relaxed max-w-4xl mx-auto">
+                    Transformez les opérations de votre entreprise avec nos solutions d'automatisation complètes - de l'automatisation des flux de travail au traitement des documents et à l'automatisation du service client.
+                </p>
+                
+                <!-- Navigation Rapide vers les Catégories de Solutions -->
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button onclick="scrollToSection('workflow-automation')" class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-smooth border border-white/20">
+                        Automatisation des Flux de Travail
+                    </button>
+                    <button onclick="scrollToSection('document-processing')" class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-smooth border border-white/20">
+                        Traitement de Documents
+                    </button>
+                    <button onclick="scrollToSection('customer-service')" class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-smooth border border-white/20">
+                        Automatisation du Service Client
+                    </button>
+                    <button onclick="scrollToSection('sales-automation')" class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-smooth border border-white/20">
+                        Automatisation des Ventes
+                    </button>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact-fr" class="btn-accent px-8 py-4 rounded-lg font-semibold transition-smooth">
+                        Obtenir une Évaluation Gratuite
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages de l'Automatisation -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Pourquoi Choisir Nos Solutions d'Automatisation IA
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Des résultats prouvés qui transforment le fonctionnement de votre entreprise
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Avantage 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M12 6V4a2 2 0 00-2-2H4a2 2 0 00-2 2v16c0 1.1.9 2 2 2h6a2 2 0 002-2v-2"/>
+                            <path d="M18.4 7.6L16 5.2l-2.4 2.4L12 6l2.4-2.4L16 2l2.4 2.4L20 6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Déploiement Rapide</h3>
+                    <p class="text-text-secondary text-sm">Mettez en place l'automatisation en 72 heures, pas en mois</p>
+                </div>
+                
+                <!-- Avantage 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">ROI Garanti</h3>
+                    <p class="text-text-secondary text-sm">Garantie de remboursement de 90 jours sur les résultats</p>
+                </div>
+                
+                <!-- Avantage 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Intégration Transparente</h3>
+                    <p class="text-text-secondary text-sm">Fonctionne avec vos systèmes et flux de travail existants</p>
+                </div>
+                
+                <!-- Avantage 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Support Expert</h3>
+                    <p class="text-text-secondary text-sm">Surveillance 24/7 et spécialistes dédiés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automatisation des Flux de Travail -->
+    <section id="workflow-automation" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Automatisation des Flux de Travail
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Éliminez les tâches manuelles et accélérez les processus métier avec une automatisation intelligente des flux de travail qui s'adapte à vos besoins uniques.
+                </p>
+            </div>
+            
+            <div class="flex justify-center">
+                <!-- Fonctionnalités & Avantages -->
+                <div class="space-y-8 max-w-2xl w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-6">Capacités d'Automatisation</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Routage & Assignation Intelligents</h4>
+                                    <p class="text-text-secondary">Acheminez automatiquement les tâches vers la bonne personne en fonction des compétences, de la charge de travail et de la disponibilité.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Flux d'Approbation</h4>
+                                    <p class="text-text-secondary">Rationalisez les processus d'approbation avec des systèmes d'escalade et de notification automatisés.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Intégration de Données</h4>
+                                    <p class="text-text-secondary">Connectez plusieurs systèmes et synchronisez automatiquement les données entre les plateformes.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Gestion des Exceptions</h4>
+                                    <p class="text-text-secondary">Détection d'erreurs intelligente et mécanismes de relance automatiques.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Métriques ROI -->
+                    <div class="bg-success-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-success-600 mb-4">Résultats Moyens de nos Clients</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="text-2xl font-bold text-success">85%</div>
+                                <div class="text-sm text-success-600">Taux d'automatisation des tâches</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-success">1,8M $</div>
+                                <div class="text-sm text-success-600">Économies annuelles sur la main-d'œuvre</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traitement de Documents -->
+    <section id="document-processing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Automatisation du Traitement de Documents
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Transformez des documents non structurés en données exploitables grâce à l'extraction, la classification et le traitement assistés par l'IA.
+                </p>
+            </div>
+            
+            <div class="flex justify-center">
+                <!-- Fonctionnalités & Avantages -->
+                <div class="space-y-8 max-w-2xl w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-6">Capacités de Traitement de Documents</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M8 12a4 4 0 100-8 4 4 0 000 8zm0 2a6 6 0 016 6H2a6 6 0 016-6z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">OCR Intelligent & Extraction de Données</h4>
+                                    <p class="text-text-secondary">Extrayez du texte, des chiffres et des données structurées de n'importe quel format de document avec une précision de 99,5 %.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2-2H4a2 2 0 01-2-2v-4z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Classification de Documents</h4>
+                                    <p class="text-text-secondary">Catégorisez et acheminez automatiquement les documents vers les flux de travail appropriés.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Validation & Vérification</h4>
+                                    <p class="text-text-secondary">Croisez les données extraites avec des bases de données et signalez les anomalies.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Intégration Système</h4>
+                                    <p class="text-text-secondary">Intégration directe avec les systèmes ERP, CRM et comptables.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automatisation du Service Client -->
+    <section id="customer-service" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Automatisation du Service Client
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Offrez des expériences client exceptionnelles 24/7 avec une automatisation de service alimentée par l'IA qui gère les demandes, achemine les tickets et fournit des résolutions instantanées.
+                </p>
+            </div>
+            
+            <div class="flex justify-center">
+                <!-- Fonctionnalités & Avantages -->
+                <div class="space-y-8 max-w-xl w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-6">Fonctionnalités d'Automatisation du Service</h3>
+                        <div class="space-y-6">
+                            <div class="bg-white p-6 rounded-lg shadow-sm border border-neutral-200">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">Assistants IA 24/7 / Chatbots IA</h4>
+                                        <p class="text-text-secondary">Assistants vocaux IA qui gèrent les appels des clients / Chatbots qui traitent 80 % des demandes courantes instantanément.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-lg shadow-sm border border-neutral-200">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">Routage Intelligent des Tickets</h4>
+                                        <p class="text-text-secondary">Acheminez automatiquement les tickets vers le meilleur agent disponible en fonction des compétences et de la charge de travail.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-lg shadow-sm border border-neutral-200">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">Réponses Automatisées</h4>
+                                        <p class="text-text-secondary">Générez des réponses personnalisées basées sur l'historique et le contexte du client.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Résultats de l'Industrie -->
+                    <div class="bg-primary-50 p-6 rounded-lg text-center">
+                        <h4 class="font-semibold text-primary mb-4">Impact de l'Automatisation du Service</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-success mb-1">+85%</div>
+                                <div class="text-sm text-text-secondary">Temps de Réponse</div>
+                                <div class="text-xs text-success">plus rapide</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-success mb-1">+35%</div>
+                                <div class="text-sm text-text-secondary">Satisfaction Client</div>
+                                <div class="text-xs text-success">d'augmentation</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-success mb-1">-60%</div>
+                                <div class="text-sm text-text-secondary">Coûts Opérationnels</div>
+                                <div class="text-xs text-success">de réduction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automatisation des Ventes -->
+    <section id="sales-automation" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Automatisation des Processus de Vente
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Accélérez votre cycle de vente avec la qualification de leads alimentée par l'IA, les suivis automatisés et la gestion intelligente du pipeline.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Qualification des Leads -->
+                <div class="bg-white rounded-2xl p-8 shadow-card-hover border border-neutral-200">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Qualification des Leads</h3>
+                    <p class="text-text-secondary mb-6">
+                        Notez et qualifiez automatiquement les leads en fonction du comportement, des données démographiques et des modèles d'engagement.
+                    </p>
+                    
+                    <div class="bg-surface p-4 rounded-lg mb-6">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between"><span class="text-sm font-medium">Engagement sur le Site</span><span class="text-sm text-success font-medium">Élevé</span></div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2"><div class="bg-success h-2 rounded-full" style="width: 85%"></div></div>
+                            <div class="flex items-center justify-between"><span class="text-sm font-medium">Engagement par Email</span><span class="text-sm text-accent font-medium">Moyen</span></div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2"><div class="bg-accent h-2 rounded-full" style="width: 60%"></div></div>
+                            <div class="flex items-center justify-between"><span class="text-sm font-medium">Adéquation Entreprise</span><span class="text-sm text-success font-medium">Élevée</span></div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2"><div class="bg-success h-2 rounded-full" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center"><div class="text-2xl font-bold text-success mb-1">A+</div><div class="text-sm text-text-secondary">Score du Lead</div></div>
+                </div>
+                
+                <!-- Suivis Automatisés -->
+                <div class="bg-white rounded-2xl p-8 shadow-card-hover border border-neutral-200">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Suivis Automatisés</h3>
+                    <p class="text-text-secondary mb-6">
+                        Séquences d'e-mails personnalisées qui s'adaptent en fonction du comportement et des niveaux d'engagement des prospects.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3"><div class="w-8 h-8 bg-success rounded-full flex items-center justify-center"><span class="text-white text-sm font-semibold">1</span></div><div class="flex-1"><div class="text-sm font-medium text-primary">Email de Bienvenue</div><div class="text-xs text-text-secondary">Envoyé immédiatement</div></div><div class="w-2 h-2 bg-success rounded-full"></div></div>
+                        <div class="flex items-center space-x-3"><div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center"><span class="text-white text-sm font-semibold">2</span></div><div class="flex-1"><div class="text-sm font-medium text-primary">Proposition de Valeur</div><div class="text-xs text-text-secondary">Jour 3</div></div><div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div></div>
+                        <div class="flex items-center space-x-3"><div class="w-8 h-8 bg-neutral-300 rounded-full flex items-center justify-center"><span class="text-white text-sm font-semibold">3</span></div><div class="flex-1"><div class="text-sm font-medium text-text-secondary">Étude de Cas</div><div class="text-xs text-text-secondary">Jour 7</div></div><div class="w-2 h-2 bg-neutral-300 rounded-full"></div></div>
+                    </div>
+                    
+                    <div class="text-center"><div class="text-2xl font-bold text-secondary mb-1">45%</div><div class="text-sm text-text-secondary">Taux d'Ouverture</div></div>
+                </div>
+                
+                <!-- Gestion du Pipeline -->
+                <div class="bg-white rounded-2xl p-8 shadow-card-hover border border-neutral-200">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Gestion du Pipeline</h3>
+                    <p class="text-text-secondary mb-6">
+                        Des informations alimentées par l'IA qui prédisent les résultats des transactions et recommandent les meilleures actions suivantes pour votre équipe de vente.
+                    </p>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div><div class="flex justify-between items-center mb-2"><span class="text-sm font-medium text-primary">Vélocité des Transactions</span><span class="text-sm font-semibold text-success">+32% plus rapide</span></div><div class="w-full bg-neutral-200 rounded-full h-2"><div class="bg-success h-2 rounded-full" style="width: 78%"></div></div></div>
+                        <div><div class="flex justify-between items-center mb-2"><span class="text-sm font-medium text-primary">Taux de Conversion</span><span class="text-sm font-semibold text-secondary">28%</span></div><div class="w-full bg-neutral-200 rounded-full h-2"><div class="bg-secondary h-2 rounded-full" style="width: 56%"></div></div></div>
+                        <div><div class="flex justify-between items-center mb-2"><span class="text-sm font-medium text-primary">Santé du Pipeline</span><span class="text-sm font-semibold text-accent">Forte</span></div><div class="w-full bg-neutral-200 rounded-full h-2"><div class="bg-accent h-2 rounded-full" style="width: 85%"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Spécifiques à l'Industrie -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Solutions IA Spécifiques à l'Industrie
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Implémentations IA sur mesure conçues pour les défis uniques et les exigences de conformité de votre industrie.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Industrie Manufacturière -->
+                <div class="card">
+                    <div class="flex items-start space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0"><svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/></svg></div>
+                        <div><h3 class="text-xl font-semibold text-primary mb-2">Industrie Manufacturière</h3><p class="text-text-secondary">Solutions d'usine intelligente pour la maintenance prédictive et l'optimisation de la qualité.</p></div>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3"><svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg><span class="text-sm text-text-secondary">Maintenance prédictive</span></div>
+                        <div class="flex items-center space-x-3"><svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg><span class="text-sm text-text-secondary">Automatisation du contrôle qualité</span></div>
+                        <div class="flex items-center space-x-3"><svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg><span class="text-sm text-text-secondary">Optimisation de la chaîne d'approvisionnement</span></div>
+                    </div>
+                    <div class="bg-accent-50 p-4 rounded-lg"><div class="text-sm font-medium text-accent-600 mb-1">Impact Moyen</div><div class="text-lg font-bold text-accent">50% de temps d'arrêt en moins, 35% de gain d'efficacité</div></div>
+                </div>
+                
+                <!-- Commerce de Détail -->
+                <div class="card">
+                    <div class="flex items-start space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0"><svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg></div>
+                        <div><h3 class="text-xl font-semibold text-primary mb-2">Détail & E-commerce</h3><p class="text-text-secondary">Expériences client personnalisées et gestion intelligente des stocks.</p></div>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3"><svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg><span class="text-sm text-text-secondary">Recommandations personnalisées</span></div>
+                        <div class="flex items-center space-x-3"><svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg><span class="text-sm text-text-secondary">Optimisation dynamique des prix</span></div>
+                        <div class="flex items-center space-x-3"><svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg><span class="text-sm text-text-secondary">Prévision de la demande</span></div>
+                    </div>
+                    <div class="bg-primary-50 p-4 rounded-lg"><div class="text-sm font-medium text-primary-600 mb-1">Impact Moyen</div><div class="text-lg font-bold text-primary">Augmentation des revenus de 25%, optimisation des stocks de 40%</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="py-20 bg-gradient-to-r from-primary-900 to-secondary-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+                Prêt à Transformer Votre Entreprise avec l'IA ?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Rejoignez les leaders de l'industrie qui ont déjà révolutionné leurs opérations avec notre portefeuille complet de solutions IA.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact-fr" class="btn-accent text-lg px-8 py-4">
+                    Planifier une Démo Technique
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de Page -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Infos Entreprise -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="../public/orangelogo.png" alt="Infera AI" class="h-16 w-auto" />
+                    </div>
+                    <p class="text-primary-200 mb-6 max-w-md">
+                        Transformer les entreprises grâce à une automatisation intelligente qui amplifie le potentiel humain et offre un avantage concurrentiel durable.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:infera.contact@gmail.com" class="text-primary-300 hover:text-white transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Liens Rapides -->
+                <div>
+                    <h4 class="font-semibold mb-4">Régions Actuelles Où Nous Opérons</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li>Afrique</li>
+                        <li>Europe</li>
+                        <li>Amérique du Nord</li>
+                        <li>Moyen-Orient</li>
+                    </ul>
+                </div>
+                
+                <!-- Infos Contact -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li><a href="/contact-fr" class="hover:text-white transition-smooth">Planifier une Consultation</a></li>
+                        <li><a href="about_infera_ai.html" class="hover:text-white transition-smooth">À Propos de Nous</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-primary-800 mt-12 pt-8 text-center text-primary-300">
+                <p>© 2025 Infera AI. Tous Droits Réservés. | Politique de Confidentialité | Conditions d'Utilisation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Bascule du menu mobile
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu) {
+                menu.classList.toggle('hidden');
+            }
+        }
+
+        // Défilement doux vers les sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // NOTE: Les fonctions de démonstration ci-dessous (updateMLDemo, runNLPDemo, etc.)
+        // correspondent à des sections HTML qui ont été supprimées du fichier fourni.
+        // Elles sont conservées ici pour référence mais ne seront pas actives sur la page actuelle.
+
+        // Initialisation de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Défilement doux pour les liens d'ancre
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

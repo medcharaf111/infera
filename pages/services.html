@@ -7,138 +7,6 @@
     <meta name="description" content="Comprehensive AI solutions portfolio including Machine Learning, NLP, Predictive Analytics, and Intelligent Automation. Interactive demos, ROI calculators, and industry-specific implementations." />
     <link rel="stylesheet" href="../css/main.css" />
     
-    <!-- Google Translate Integration -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            // Desktop version
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'fr,en,es,de,it,pt,ar',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-            
-            // Mobile version
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'fr,en,es,de,it,pt,ar',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element_mobile');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
-    <!-- Google Translate Custom Styling -->
-    <style>
-        /* Google Translate Widget Styling - Ultra Small, Icon Only */
-        .goog-te-gadget-simple {
-            background-color: transparent !important;
-            border: 1px solid #e5e7eb !important;
-            border-radius: 3px !important;
-            padding: 2px 4px 3px 3px !important;
-            font-size: 0px !important;
-            color: #6b7280 !important;
-            font-family: Inter, sans-serif !important;
-            margin: 0 !important;
-            width: 22px !important;
-            height: 22px !important;
-            line-height: 18px !important;
-            overflow: hidden !important;
-            position: relative !important;
-            z-index: 1001 !important;
-        }
-        
-        .goog-te-gadget-simple:hover {
-            border-color: #3b82f6 !important;
-            background-color: #f8fafc !important;
-        }
-        
-        .goog-te-gadget-simple .goog-te-menu-value {
-            font-size: 0px !important;
-            line-height: 0px !important;
-            color: transparent !important;
-            width: 0px !important;
-            height: 0px !important;
-            overflow: hidden !important;
-        }
-        
-        .goog-te-gadget-simple .goog-te-menu-value span {
-            display: none !important;
-        }
-        
-        /* Add a custom translate icon */
-        .goog-te-gadget-simple::before {
-            content: "" !important;
-            font-size: 12px !important;
-            position: absolute !important;
-            top: 50% !important;
-            left: 50% !important;
-            transform: translate(-50%, -50%) !important;
-            line-height: 1 !important;
-            color: #6b7280 !important;
-        }
-        
-        .goog-te-gadget-simple:hover::before {
-            color: #3b82f6 !important;
-        }
-        
-        /* Fix translate widget container - ultra small */
-        #google_translate_element {
-            display: inline-block !important;
-            width: 22px !important;
-            height: 22px !important;
-            overflow: hidden !important;
-        }
-        
-        #google_translate_element .goog-te-gadget {
-            font-size: 0 !important;
-            line-height: 0 !important;
-            width: 22px !important;
-            height: 22px !important;
-        }
-        
-        #google_translate_element .goog-te-gadget-simple {
-            font-size: 0px !important;
-            line-height: 18px !important;
-            width: 22px !important;
-            height: 22px !important;
-        }
-        
-        /* Mobile styling - slightly larger but still very compact */
-        #google_translate_element_mobile {
-            width: 24px !important;
-            height: 24px !important;
-        }
-        
-        #google_translate_element_mobile .goog-te-gadget-simple {
-            width: 24px !important;
-            height: 24px !important;
-            padding: 2px !important;
-        }
-        
-        #google_translate_element_mobile .goog-te-gadget-simple::before {
-            font-size: 14px !important;
-        }
-        
-        /* Prevent layout shifts */
-        .goog-te-gadget {
-            display: inline-block !important;
-            vertical-align: top !important;
-            width: 22px !important;
-            height: 22px !important;
-        }
-        
-        /* Hide dropdown arrow */
-        .goog-te-gadget-simple .goog-te-menu-value:after {
-            display: none !important;
-        }
-        
-        /* Hide all text elements */
-        .goog-te-gadget-simple * {
-            font-size: 0 !important;
-            color: transparent !important;
-        }
-    </style>
-    
 <!--<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Finferaai2504back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>-->
 </head>
 <body class="bg-background font-inter">
@@ -160,9 +28,7 @@
                         <a href="/services" class="text-primary font-medium border-b-2 border-secondary px-3 py-2">AI Automation Solutions</a>
                         <a href="/about" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">About</a>
                         <a href="/contact" class="btn-accent">Schedule Consultation</a>
-                        
-                        <!-- Google Translate Widget -->
-                        <div id="google_translate_element" class="flex items-center ml-4"></div>
+                        <a href="/services-fr" class="ml-4 px-3 py-2 rounded border border-primary text-primary hover:bg-primary hover:text-white transition-smooth">FR</a>
                     </div>
                 </div>
                 
@@ -183,12 +49,7 @@
                     <a href="/services" class="text-primary font-medium block px-3 py-2">AI Automation Solutions</a>
                     <a href="/about" class="text-text-secondary hover:text-primary block px-3 py-2">About</a>
                     <a href="/contact" class="btn-accent block text-center mt-4">Schedule Consultation</a>
-                    
-                    <!-- Google Translate for Mobile -->
-                    <div class="px-3 py-2 border-t border-neutral-200 mt-4">
-                        <div class="text-sm text-text-secondary mb-2">Language / Langue:</div>
-                        <div id="google_translate_element_mobile"></div>
-                    </div>
+                    <a href="/services-fr" class="block mt-4 px-3 py-2 rounded border border-primary text-primary text-center hover:bg-primary hover:text-white transition-smooth">FR</a>
                 </div>
             </div>
         </nav>
@@ -822,7 +683,7 @@
                 Join industry leaders who have already revolutionized their operations with our comprehensive AI solutions portfolio.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="contact_executive_consultation.html" class="btn-accent text-lg px-8 py-4">
+                <a href="/contact" class="btn-accent text-lg px-8 py-4">
                     Schedule Technical Demo
                 </a>
             </div>
@@ -865,7 +726,7 @@
                 <div>
                     <h4 class="font-semibold mb-4">Contact</h4>
                     <ul class="space-y-2 text-primary-200">
-                        <li><a href="contact_executive_consultation.html" class="hover:text-white transition-smooth">Schedule Consultation</a></li>
+                        <li><a href="/contact" class="hover:text-white transition-smooth">Schedule Consultation</a></li>
                         <li><a href="about_infera_ai.html" class="hover:text-white transition-smooth">About Us</a></li>
                     </ul>
                 </div>

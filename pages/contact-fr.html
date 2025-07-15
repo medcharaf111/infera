@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Consultation | Infera AI - Planifiez Votre Session Stratégique IA</title>
+    <meta name="description" content="Planifiez une consultation avec l'équipe dirigeante d'Infera AI. Qualification de leads par IA, briefings personnalisés et consultations techniques pour la transformation IA de votre entreprise." />
+    <link rel="stylesheet" href="../css/main.css" />
+    
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Finferaai2504back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background font-inter">
+    <!-- En-tête de Navigation -->
+    <header class="bg-white shadow-executive sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="/home-fr" class="flex items-center">
+                        <img src="../public/bluelogo.png" alt="Infera AI" class="h-32 w-auto" />
+                    </a>
+                </div>
+                
+                <!-- Navigation de Bureau -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/home-fr" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">Accueil</a>
+                        <a href="/services-fr" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">Solutions d'Automatisation IA</a>
+                        <a href="/about-fr" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2">À Propos</a>
+                        <a href="/contact-fr" class="text-primary font-medium border-b-2 border-secondary px-3 py-2">Contact</a>
+                        <a href="/contact" class="ml-4 px-3 py-2 rounded border border-primary text-primary hover:bg-primary hover:text-white transition-smooth">EN</a>
+                    </div>
+                </div>
+                
+                <!-- Bouton du menu mobile -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Navigation Mobile -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-neutral-200">
+                    <a href="/home-fr" class="text-text-secondary hover:text-primary block px-3 py-2">Accueil</a>
+                    <a href="/services-fr" class="text-text-secondary hover:text-primary block px-3 py-2">Solutions d'Automatisation IA</a>
+                    <a href="/about-fr" class="text-text-secondary hover:text-primary block px-3 py-2">À Propos</a>
+                    <a href="/contact-fr" class="text-primary font-medium block px-3 py-2">Contact</a>
+                    <a href="/contact" class="block mt-4 px-3 py-2 rounded border border-primary text-primary text-center hover:bg-primary hover:text-white transition-smooth">EN</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Héros -->
+    <section class="relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+        <!-- Superposition transparente pour maintenir le dégradé bleu -->
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom right, rgba(30, 58, 138, 0.85), rgba(55, 65, 81, 0.80), rgba(91, 33, 182, 0.85));"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="text-center text-white animate-fade-in">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Obtenez Votre Évaluation d'<span class="text-accent">Automatisation</span><br />
+                    Gratuite Aujourd'hui
+                </h1>
+                <p class="text-xl lg:text-2xl mb-8 text-primary-100 leading-relaxed max-w-4xl mx-auto">
+                    Découvrez comment l'automatisation par l'IA peut transformer vos opérations commerciales. Nos experts analyseront vos processus et vous montreront exactement combien de temps et d'argent vous pouvez économiser.
+                </p>
+                
+                <!-- Boutons d'Action Rapide -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <button onclick="openConsultationModal('automation-assessment')" class="btn-accent text-lg px-8 py-4">
+                        Obtenir une Évaluation Gratuite
+                    </button>
+                    <button onclick="openConsultationModal('technical-demo')" class="bg-white text-primary hover:bg-primary-50 px-8 py-4 rounded-lg font-semibold transition-smooth">
+                        Planifier une Démo Technique
+                    </button>
+                </div>
+                
+                <!-- Indicateurs de Confiance -->
+                <div class="flex flex-wrap justify-center items-center gap-8 text-primary-200">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <span>Rapport ROI en 48h</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M12 15v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2m14-4V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                        <span>Sans Engagement</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/></svg>
+                        <span>Experts en Automatisation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Options de Consultation -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    Choisissez Votre Évaluation d'Automatisation
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Plusieurs options d'évaluation conçues pour identifier les opportunités d'automatisation et calculer rapidement et précisément votre ROI potentiel.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Évaluation d'Automatisation Gratuite -->
+                <div class="card hover:shadow-card-hover transition-shadow">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Évaluation d'Automatisation Gratuite</h3>
+                    <p class="text-text-secondary mb-6">
+                        Analyse complète de vos processus actuels avec des projections de ROI détaillées et une feuille de route d'automatisation - entièrement gratuit.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm text-text-secondary"><svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Analyse et cartographie des processus</div>
+                        <div class="flex items-center text-sm text-text-secondary"><svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Calcul du ROI et calendrier</div>
+                        <div class="flex items-center text-sm text-text-secondary"><svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Stratégie d'automatisation sur mesure</div>
+                    </div>
+                    <button onclick="openConsultationModal('automation-assessment')" class="btn-accent w-full">Obtenir une Évaluation Gratuite</button>
+                </div>
+                
+                <!-- Démo Technique -->
+                <div class="card hover:shadow-card-hover transition-shadow">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Démo d'Automatisation en Direct</h3>
+                    <p class="text-text-secondary mb-6">
+                        Voyez nos solutions d'automatisation en action avec une démo personnalisée utilisant vos processus et données réels.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm text-text-secondary"><svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Démonstration d'automatisation en direct</div>
+                        <div class="flex items-center text-sm text-text-secondary"><svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Session de questions-réponses techniques</div>
+                        <div class="flex items-center text-sm text-text-secondary"><svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Examen des prérequis d'intégration</div>
+                    </div>
+                    <button onclick="openConsultationModal('technical-demo')" class="btn-secondary w-full">Planifier une Démo</button>
+                </div>
+                
+                <!-- Programme Pilote -->
+                <div class="card hover:shadow-card-hover transition-shadow">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3zm0-8a5 5 0 015 5 5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Projet Pilote d'Automatisation</h3>
+                    <p class="text-text-secondary mb-6">
+                        Commencez avec un petit projet pilote d'automatisation pour prouver le ROI avant de passer à des initiatives plus vastes.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm text-text-secondary"><svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Preuve de concept à petite échelle</div>
+                        <div class="flex items-center text-sm text-text-secondary"><svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Suivi du ROI mesurable</div>
+                        <div class="flex items-center text-sm text-text-secondary"><svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Planification de la feuille de route d'expansion</div>
+                    </div>
+                    <button onclick="openConsultationModal('pilot-project')" class="btn-primary w-full">Démarrer un Projet Pilote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modale de Consultation -->
+    <div id="consultation-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modal-title" class="text-2xl font-bold text-primary">Planifier une Consultation</h3>
+                    <button onclick="closeConsultationModal()" class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
+                </div>
+                
+                <form id="consultation-form" class="space-y-6" onsubmit="submitConsultation(event)">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Prénom *</label>
+                            <input type="text" name="firstName" required class="input-field" placeholder="Jean" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Nom de famille *</label>
+                            <input type="text" name="lastName" required class="input-field" placeholder="Dupont" />
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Adresse E-mail *</label>
+                        <input type="email" name="email" required class="input-field" placeholder="jean.dupont@entreprise.com" />
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Entreprise *</label>
+                            <input type="text" name="company" required class="input-field" placeholder="Nom de l'Entreprise" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Poste *</label>
+                            <input type="text" name="jobTitle" required class="input-field" placeholder="Directeur Technique" />
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Secteur d'Activité *</label>
+                        <select name="industry" required class="input-field">
+                            <option value="">Sélectionnez votre secteur</option>
+                            <option>Services Financiers</option>
+                            <option>Santé</option>
+                            <option>Industrie</option>
+                            <option>Détail & E-commerce</option>
+                            <option>Technologie</option>
+                            <option>Énergie & Services Publics</option>
+                            <option>Gouvernement</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Taille de l'Entreprise</label>
+                        <select name="companySize" class="input-field">
+                            <option value="">Sélectionnez la taille de l'entreprise</option>
+                            <option>1-50 employés</option>
+                            <option>51-200 employés</option>
+                            <option>201-1000 employés</option>
+                            <option>1001-5000 employés</option>
+                            <option>+5000 employés</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Défis Actuels</label>
+                        <textarea name="challenges" class="input-field h-32" placeholder="Décrivez vos défis commerciaux actuels et comment l'IA pourrait vous aider à les résoudre..."></textarea>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" required class="mr-2" />
+                        <span class="text-sm text-text-secondary">
+                            J'accepte de recevoir des communications d'Infera AI et je comprends que je peux me désabonner à tout moment.
+                        </span>
+                    </div>
+                    
+                    <button type="submit" class="btn-accent w-full text-lg py-4">
+                        Planifier la Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de Page -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Infos Entreprise -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="../public/orangelogo.png" alt="Infera AI" class="h-16 w-auto" />
+                    </div>
+                    <p class="text-primary-200 mb-6 max-w-md">
+                        Transformer les entreprises grâce à une automatisation intelligente qui amplifie le potentiel humain et offre un avantage concurrentiel durable.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:infera.contact@gmail.com" class="text-primary-300 hover:text-white transition-smooth"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z"/></svg></a>
+                    </div>
+                </div>
+                
+                <!-- Liens Rapides -->
+                <div>
+                    <h4 class="font-semibold mb-4">Régions Actuelles Où Nous Opérons</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li>Afrique</li>
+                        <li>Europe</li>
+                        <li>Amérique du Nord</li>
+                        <li>Moyen-Orient</li>
+                    </ul>
+                </div>
+                
+                <!-- Infos Contact -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-primary-200">
+                        <li><a href="/contact-fr" class="hover:text-white transition-smooth">Planifier une Consultation</a></li>
+                        <li><a href="about_infera_ai.html" class="hover:text-white transition-smooth">À Propos de Nous</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-primary-800 mt-12 pt-8 text-center text-primary-300">
+                <p>© 2025 Infera AI. Tous Droits Réservés. | Politique de Confidentialité | Conditions d'Utilisation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de service d'email -->
+    <script src="../public/email-service.js"></script>
+    <script>
+        // Bascule du menu mobile
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Défilement doux vers une section
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Fonctions de la modale de consultation
+        function openConsultationModal(type) {
+            const modal = document.getElementById('consultation-modal');
+            const title = document.getElementById('modal-title');
+            
+            const titles = {
+                'automation-assessment': 'Planifier une Évaluation d\'Automatisation Gratuite',
+                'technical-demo': 'Planifier une Démo d\'Automatisation en Direct',
+                'pilot-project': 'Démarrer un Projet Pilote d\'Automatisation'
+            };
+            
+            title.textContent = titles[type] || 'Planifier une Consultation';
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeConsultationModal() {
+            document.getElementById('consultation-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function submitConsultation(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            
+            // Simule une validation côté client pour la démo
+            if (!data.firstName || !data.lastName || !data.email || !data.company || !data.jobTitle || !data.industry) {
+                 alert('Veuillez remplir tous les champs obligatoires (*).');
+                 return;
+            }
+            
+            // Si le service email externe est configuré, on l'utilise.
+            // Sinon, on affiche une alerte de succès pour la démo.
+            if (typeof emailService !== 'undefined' && typeof FormValidator !== 'undefined') {
+                const validation = FormValidator.validateForm(data);
+                if (!validation.isValid) {
+                    let errorMessage = 'Veuillez corriger les erreurs suivantes :\n';
+                    Object.values(validation.errors).forEach(error => { errorMessage += '• ' + error + '\n'; });
+                    alert(errorMessage);
+                    return;
+                }
+                
+                emailService.sendEmail(data)
+                    .then(result => {
+                        if (result.success) {
+                            alert('Merci pour votre demande de consultation ! Nous vous contacterons dans les 24 heures pour confirmer votre rendez-vous.');
+                            form.reset();
+                            closeConsultationModal();
+                        } else {
+                            alert(result.message);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erreur de soumission du formulaire :', error);
+                        alert('Une erreur est survenue lors de l\'envoi de votre formulaire. Veuillez réessayer ou nous contacter directement à infera.contact@gmail.com');
+                    });
+            } else {
+                // Comportement par défaut si les scripts externes ne sont pas chargés
+                alert('Merci pour votre demande de consultation ! Nous vous contacterons dans les 24 heures.');
+                form.reset();
+                closeConsultationModal();
+            }
+        }
+
+        // Fermer la modale en cliquant à l'extérieur
+        document.getElementById('consultation-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeConsultationModal();
+            }
+        });
+
+        // NOTE: Les fonctions de gestion de fichiers et de chat ont été retirées du script
+        // car les éléments HTML correspondants n'étaient pas présents.
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
